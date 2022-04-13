@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="helpfunctions.js"></script>
+</head>
+<body>
+    <script>
+        function charRemove (char, text){
+            if(typeof char == 'string' && typeof text == 'string'){
+                console.log(text.replaceAll(char, ''));
+            } else {
+                console.error('wrong datatype');
+            }
+        }
+    </script>
+    <button type="button" onclick="catStatus()">"click me!"</button>
+</body>
+</html>
